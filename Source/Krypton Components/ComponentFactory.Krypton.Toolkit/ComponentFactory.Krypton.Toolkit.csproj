@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows8.0</TargetFramework>
     <OutputType>Library</OutputType>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>False</SignAssembly>
+    <AssemblyOriginatorKeyFile></AssemblyOriginatorKeyFile>
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <DelaySign>false</DelaySign>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>

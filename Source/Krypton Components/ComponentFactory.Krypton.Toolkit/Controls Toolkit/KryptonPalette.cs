@@ -25,6 +25,7 @@ using System.Threading;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
 
+
 namespace ComponentFactory.Krypton.Toolkit
 {
     /// <summary>
@@ -3748,6 +3749,9 @@ namespace ComponentFactory.Krypton.Toolkit
 
                         // Convert the bytes back into an Image
                         MemoryStream memory = new MemoryStream(bytes);
+                        // Disable the warning.
+                        #pragma warning disable SYSLIB0011
+
                         BinaryFormatter formatter = new BinaryFormatter();
                         Image resurect = (Image)formatter.Deserialize(memory);
 
@@ -3916,6 +3920,9 @@ namespace ComponentFactory.Krypton.Toolkit
                 {
                     // Conv ert the Image into base64 so it can be used in xml
                     MemoryStream memory = new MemoryStream();
+
+                    // Disable the warning.
+                    #pragma warning disable SYSLIB0011
                     BinaryFormatter formatter = new BinaryFormatter();
                     formatter.Serialize(memory, entry.Key);
                     string base64 = Convert.ToBase64String(memory.ToArray());

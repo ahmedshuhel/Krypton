@@ -1560,7 +1560,12 @@ namespace ComponentFactory.Krypton.Toolkit
             {
                 // Convert the Image into base64 so it can be used in xml
                 MemoryStream memory = new MemoryStream();
+  
+                // Disable the warning.
+                #pragma warning disable SYSLIB0011
                 BinaryFormatter formatter = new BinaryFormatter();
+
+
                 formatter.Serialize(memory, image);
                 string base64 = Convert.ToBase64String(memory.ToArray());
 
@@ -1583,6 +1588,8 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Convert the bytes back into an Image
             MemoryStream memory = new MemoryStream(bytes);
+            // Disable the warning.
+            #pragma warning disable SYSLIB0011
             BinaryFormatter formatter = new BinaryFormatter();
             return (Image)formatter.Deserialize(memory);
         }
