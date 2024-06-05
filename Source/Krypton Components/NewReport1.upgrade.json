@@ -1,0 +1,596 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-06-05T16:42:13.2959958Z",
+  "analysisEndTime": "2024-06-05T16:44:34.4204246Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 5,
+      "issues": 3,
+      "incidents": 23,
+      "effort": 23
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 10,
+        "Optional": 13,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 10,
+        "Api": 13
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 4,
+      "ruleInstances": [
+        {
+          "incidentId": "bdef38ed-daeb-4ec0-8d56-d7ca1e941705",
+          "ruleId": "Project.0001",
+          "projectPath": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj"
+          }
+        },
+        {
+          "incidentId": "faefb709-894c-41de-b3ae-755e16332cf4",
+          "ruleId": "Project.0002",
+          "projectPath": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows",
+            "protectedSnippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "0e8c9a7d-507e-4b84-9718-7c383bec32ba",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Docking\\Control Docking\\KryptonAutoHiddenSlidePanel.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 473,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "e4350ab2-65d2-4ea9-a012-2d2f95f015b6",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Docking\\ComponentFactory.Krypton.Docking.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Docking\\Dragging\\DockingDragManager.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 206,
+            "column": 9
+          }
+        }
+      ]
+    },
+    {
+      "path": "ComponentFactory.Krypton.Navigator\\ComponentFactory.Krypton.Navigator.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "8adbb186-a649-45a0-8b6d-a4e74dd12f78",
+          "ruleId": "Project.0001",
+          "projectPath": "ComponentFactory.Krypton.Navigator\\ComponentFactory.Krypton.Navigator.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Navigator\\ComponentFactory.Krypton.Navigator.csproj"
+          }
+        },
+        {
+          "incidentId": "a6e811f1-013b-49cd-9de4-7f5796f92f83",
+          "ruleId": "Project.0002",
+          "projectPath": "ComponentFactory.Krypton.Navigator\\ComponentFactory.Krypton.Navigator.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Navigator\\ComponentFactory.Krypton.Navigator.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows",
+            "protectedSnippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        }
+      ]
+    },
+    {
+      "path": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 3,
+      "ruleInstances": [
+        {
+          "incidentId": "c6b061f6-b0fc-48c2-87c8-8eec56c2a9d6",
+          "ruleId": "Project.0001",
+          "projectPath": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj"
+          }
+        },
+        {
+          "incidentId": "4e9fa217-b557-4ec7-8850-d8573f7c8bf9",
+          "ruleId": "Project.0002",
+          "projectPath": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows",
+            "protectedSnippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "557abc26-4f43-4cc7-a16a-d23c8bac856d",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Ribbon\\ComponentFactory.Krypton.Ribbon.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Ribbon\\Controls Ribbon\\KryptonRibbon.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 1228,
+            "column": 9
+          }
+        }
+      ]
+    },
+    {
+      "path": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+      "startingProject": true,
+      "issues": 3,
+      "storyPoints": 12,
+      "ruleInstances": [
+        {
+          "incidentId": "15122a0c-362d-4931-98d8-9f6fb2b9c12e",
+          "ruleId": "Project.0001",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj"
+          }
+        },
+        {
+          "incidentId": "1e61407f-9cb2-4d37-9dd9-3470d13c843c",
+          "ruleId": "Project.0002",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows",
+            "protectedSnippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        },
+        {
+          "incidentId": "c611a405-616d-4fd2-bde0-6426b9b4ddcc",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controller\\SeparatorController.cs",
+            "snippet": "CodeAccessPermission.RevertAssert();",
+            "protectedSnippet": "T:System.Security.CodeAccessPermission",
+            "label": "T:System.Security.CodeAccessPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.codeaccesspermission",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 630,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "a1e82ffb-8ae6-4e80-8f74-c9dff0df9b3d",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controls Visuals\\VisualPopupManager.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 347,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "850cbabe-9da3-46e2-aa15-95f3cd51e36c",
+          "ruleId": "Api.0003",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controls Toolkit\\KryptonPalette.cs",
+            "snippet": "BinaryFormatter formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": true
+              }
+            ],
+            "line": 3750,
+            "column": 24
+          }
+        },
+        {
+          "incidentId": "e85af846-1ce7-4732-aa72-b8976a9acf2c",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\General\\ModalWaitDialog.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 138,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "f4522def-5353-4a77-a57c-3dc896cde560",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controller\\SeparatorController.cs",
+            "snippet": "new SecurityPermission(SecurityPermissionFlag.UnmanagedCode).Assert();",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermission",
+            "label": "T:System.Security.Permissions.SecurityPermission",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermission",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 620,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "f9305389-79eb-42e9-be03-dcae407caa2f",
+          "ruleId": "Api.0003",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\General\\CommonHelper.cs",
+            "snippet": "BinaryFormatter formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": true
+              }
+            ],
+            "line": 1562,
+            "column": 16
+          }
+        },
+        {
+          "incidentId": "5bd416c4-d70c-4235-870b-620021aeba7d",
+          "ruleId": "Api.0003",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\General\\CommonHelper.cs",
+            "snippet": "BinaryFormatter formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": true
+              }
+            ],
+            "line": 1585,
+            "column": 12
+          }
+        },
+        {
+          "incidentId": "e16bdd6b-c4ac-48e4-bff9-6b06afe15d4d",
+          "ruleId": "Api.0003",
+          "description": "BinaryFormatter serialization is obsolete and should not be used. See https://aka.ms/binaryformatter for more information.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controls Toolkit\\KryptonPalette.cs",
+            "snippet": "BinaryFormatter formatter = new BinaryFormatter();",
+            "protectedSnippet": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "label": "T:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0011",
+                "isCustom": true
+              }
+            ],
+            "line": 3918,
+            "column": 20
+          }
+        },
+        {
+          "incidentId": "88c4cf15-6151-40f8-af53-a4618e054be3",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controller\\SeparatorController.cs",
+            "snippet": "SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.UnmanagedCode)",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "label": "T:System.Security.Permissions.SecurityPermissionAttribute",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionattribute",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 679,
+            "column": 9
+          }
+        },
+        {
+          "incidentId": "eaeb89fd-a972-4ad1-9dd5-5c53a08567c0",
+          "ruleId": "Api.0003",
+          "description": "Code Access Security is not supported or honored by the runtime.",
+          "projectPath": "ComponentFactory.Krypton.Toolkit\\ComponentFactory.Krypton.Toolkit.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Toolkit\\Controller\\SeparatorController.cs",
+            "snippet": "new SecurityPermission(SecurityPermissionFlag.UnmanagedCode).Assert();",
+            "protectedSnippet": "T:System.Security.Permissions.SecurityPermissionFlag",
+            "label": "T:System.Security.Permissions.SecurityPermissionFlag",
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://docs.microsoft.com/en-us/dotnet/api/system.security.permissions.securitypermissionflag",
+                "isCustom": false
+              },
+              {
+                "title": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "url": "https://aka.ms/dotnet-warnings/SYSLIB0003",
+                "isCustom": true
+              }
+            ],
+            "line": 620,
+            "column": 16
+          }
+        }
+      ]
+    },
+    {
+      "path": "ComponentFactory.Krypton.Workspace\\ComponentFactory.Krypton.Workspace.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "940afd0c-fee9-47a4-9876-9bdba7ddad24",
+          "ruleId": "Project.0001",
+          "projectPath": "ComponentFactory.Krypton.Workspace\\ComponentFactory.Krypton.Workspace.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Workspace\\ComponentFactory.Krypton.Workspace.csproj"
+          }
+        },
+        {
+          "incidentId": "9967d873-1925-4eb3-bfd6-9ed7263aa6a8",
+          "ruleId": "Project.0002",
+          "projectPath": "ComponentFactory.Krypton.Workspace\\ComponentFactory.Krypton.Workspace.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "ComponentFactory.Krypton.Workspace\\ComponentFactory.Krypton.Workspace.csproj",
+            "snippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows",
+            "protectedSnippet": "Current: .NETFramework,Version=v4.8\nNew: net8.0-windows"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0001": {
+      "id": "Project.0001",
+      "description": "Project file needs to be converted to SDK style. Modern .NET framework projects require a change in the project file format and use SDK corresponding to project flavor and functionality.",
+      "label": "Project file needs to be converted to SDK style",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "Api.0003": {
+      "id": "Api.0003",
+      "description": "API is obsolete.",
+      "label": "API is obsolete",
+      "severity": "Optional",
+      "effort": 1
+    }
+  }
+}
